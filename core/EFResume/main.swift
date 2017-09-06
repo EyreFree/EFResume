@@ -8,5 +8,7 @@
 
 import Foundation
 
-print("Hello, World!")
+// 测试用，设置当前工作目录
+EFPath.base = "/Users/eyrefree/Documents/iOS/EFResume"
 
+print(EFFile(path: EFPath.resume).content ?? "")
