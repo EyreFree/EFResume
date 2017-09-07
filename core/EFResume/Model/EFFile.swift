@@ -23,12 +23,16 @@ class EFFile {
                 contentsOfFile: path,
                 encoding: String.Encoding.utf8
             )
-            lines = content?.components(separatedBy: "\n").map({
-                $0.trimmingCharacters(in: .whitespacesAndNewlines)
-            }).filter { $0 != "" } ?? []
+            onLines()
         } catch {
             content = nil
             EFError.shared.setError(error: error)
         }
+    }
+
+    func onLines() {
+        lines = content?.components(separatedBy: "\n").map({
+            $0.trimmingCharacters(in: .whitespacesAndNewlines)
+        }).filter { $0 != "" } ?? []
     }
 }

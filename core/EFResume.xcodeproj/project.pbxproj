@@ -13,6 +13,7 @@
 		12A82A431F60254D0060230F /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A421F60254D0060230F /* String+.swift */; };
 		12A82A451F6025520060230F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A441F6025520060230F /* Global.swift */; };
 		12A82A471F602B840060230F /* EFPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A461F602B840060230F /* EFPath.swift */; };
+		12A82A491F6035710060230F /* EFTwig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A481F6035710060230F /* EFTwig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		12A82A421F60254D0060230F /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		12A82A441F6025520060230F /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		12A82A461F602B840060230F /* EFPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFPath.swift; sourceTree = "<group>"; };
+		12A82A481F6035710060230F /* EFTwig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFTwig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +81,9 @@
 		12A82A3B1F600A270060230F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				12A82A3C1F600A270060230F /* EFFile.swift */,
 				12A82A461F602B840060230F /* EFPath.swift */,
+				12A82A3C1F600A270060230F /* EFFile.swift */,
+				12A82A481F6035710060230F /* EFTwig.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				1297619C1F5FC8D10075C314 /* main.swift in Sources */,
 				12A82A3D1F600A270060230F /* EFFile.swift in Sources */,
 				12A82A431F60254D0060230F /* String+.swift in Sources */,
+				12A82A491F6035710060230F /* EFTwig.swift in Sources */,
 				12A82A471F602B840060230F /* EFPath.swift in Sources */,
 				12A82A451F6025520060230F /* Global.swift in Sources */,
 				12A82A401F600C760060230F /* EFError.swift in Sources */,
