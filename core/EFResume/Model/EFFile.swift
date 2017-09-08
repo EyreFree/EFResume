@@ -11,28 +11,22 @@ import Foundation
 class EFFile {
 
     var path: String
-    var content: String?
-
-    var lines: [String] = []
+    var content: String = ""
 
     init(path: String) {
         self.path = path
-
         do {
-            content = try String(
-                contentsOfFile: path,
-                encoding: String.Encoding.utf8
-            )
-            onLines()
+            content = try String(contentsOfFile: path, encoding: String.Encoding.utf8)
         } catch {
-            content = nil
             EFError.shared.setError(error: error)
         }
     }
 
-    func onLines() {
-        lines = content?.components(separatedBy: "\n").map({
-            $0.trimmingCharacters(in: .whitespacesAndNewlines)
-        }).filter { $0 != "" } ?? []
+    func save() {
+        do {
+            try content.write(toFile: path, atomically: false, encoding: String.Encoding.utf8)
+        } catch {
+            EFError.shared.setError(error: error)
+        }
     }
 }

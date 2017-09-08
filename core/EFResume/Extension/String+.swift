@@ -73,4 +73,9 @@ extension String {
         }
         return outString
     }
+
+    // 清除字符串左右空格和换行
+    func clean() -> String {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
 }

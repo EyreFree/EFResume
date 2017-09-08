@@ -8,35 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		1297619C1F5FC8D10075C314 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297619B1F5FC8D10075C314 /* main.swift */; };
+		129F35921F62DB670076F627 /* PROJECT_DIR in CopyFiles */ = {isa = PBXBuildFile; fileRef = 129F35911F62DB570076F627 /* PROJECT_DIR */; };
+		129F35941F62DEA70076F627 /* EFTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129F35931F62DEA70076F627 /* EFTemplete.swift */; };
 		12A82A3D1F600A270060230F /* EFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A3C1F600A270060230F /* EFFile.swift */; };
 		12A82A401F600C760060230F /* EFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A3F1F600C760060230F /* EFError.swift */; };
 		12A82A431F60254D0060230F /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A421F60254D0060230F /* String+.swift */; };
 		12A82A451F6025520060230F /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A441F6025520060230F /* Global.swift */; };
 		12A82A471F602B840060230F /* EFPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A461F602B840060230F /* EFPath.swift */; };
-		12A82A491F6035710060230F /* EFTwig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A82A481F6035710060230F /* EFTwig.swift */; };
+		12D4D4E01F62C69D00141908 /* templete.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1218703B1F624F3300B27057 /* templete.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		129761961F5FC8D10075C314 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 			files = (
+				129F35921F62DB670076F627 /* PROJECT_DIR in CopyFiles */,
+				12D4D4E01F62C69D00141908 /* templete.html in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1218703B1F624F3300B27057 /* templete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = templete.html; sourceTree = "<group>"; };
 		129761981F5FC8D10075C314 /* EFResume */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EFResume; sourceTree = BUILT_PRODUCTS_DIR; };
 		1297619B1F5FC8D10075C314 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		129F35911F62DB570076F627 /* PROJECT_DIR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PROJECT_DIR; sourceTree = "<group>"; };
+		129F35931F62DEA70076F627 /* EFTemplete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFTemplete.swift; sourceTree = "<group>"; };
 		12A82A3C1F600A270060230F /* EFFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFFile.swift; sourceTree = "<group>"; };
 		12A82A3F1F600C760060230F /* EFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFError.swift; sourceTree = "<group>"; };
 		12A82A421F60254D0060230F /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		12A82A441F6025520060230F /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		12A82A461F602B840060230F /* EFPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFPath.swift; sourceTree = "<group>"; };
-		12A82A481F6035710060230F /* EFTwig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFTwig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1218703A1F624F3300B27057 /* Templete */ = {
+			isa = PBXGroup;
+			children = (
+				129F35911F62DB570076F627 /* PROJECT_DIR */,
+				1218703B1F624F3300B27057 /* templete.html */,
+			);
+			path = Templete;
+			sourceTree = "<group>";
+		};
 		1297618F1F5FC8D10075C314 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +84,7 @@
 		1297619A1F5FC8D10075C314 /* EFResume */ = {
 			isa = PBXGroup;
 			children = (
+				1218703A1F624F3300B27057 /* Templete */,
 				12A82A441F6025520060230F /* Global.swift */,
 				12A82A411F60254D0060230F /* Extension */,
 				12A82A3E1F600C760060230F /* Service */,
@@ -83,7 +99,7 @@
 			children = (
 				12A82A461F602B840060230F /* EFPath.swift */,
 				12A82A3C1F600A270060230F /* EFFile.swift */,
-				12A82A481F6035710060230F /* EFTwig.swift */,
+				129F35931F62DEA70076F627 /* EFTemplete.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +127,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1297619F1F5FC8D10075C314 /* Build configuration list for PBXNativeTarget "EFResume" */;
 			buildPhases = (
+				129F35901F62D9460076F627 /* Save PROJECT_DIR */,
 				129761941F5FC8D10075C314 /* Sources */,
 				129761951F5FC8D10075C314 /* Frameworks */,
 				129761961F5FC8D10075C314 /* CopyFiles */,
@@ -158,6 +175,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		129F35901F62D9460076F627 /* Save PROJECT_DIR */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Save PROJECT_DIR";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $PROJECT_DIR;\ncd EFResume/Templete;\necho \"$PROJECT_DIR\" > PROJECT_DIR;";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		129761941F5FC8D10075C314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -166,7 +200,7 @@
 				1297619C1F5FC8D10075C314 /* main.swift in Sources */,
 				12A82A3D1F600A270060230F /* EFFile.swift in Sources */,
 				12A82A431F60254D0060230F /* String+.swift in Sources */,
-				12A82A491F6035710060230F /* EFTwig.swift in Sources */,
+				129F35941F62DEA70076F627 /* EFTemplete.swift in Sources */,
 				12A82A471F602B840060230F /* EFPath.swift in Sources */,
 				12A82A451F6025520060230F /* Global.swift in Sources */,
 				12A82A401F600C760060230F /* EFError.swift in Sources */,
@@ -270,6 +304,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = P3X2725LYY;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"PROJECT_DIR=\"$PROJECT_DIR\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

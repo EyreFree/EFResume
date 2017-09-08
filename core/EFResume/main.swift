@@ -8,8 +8,16 @@
 
 import Foundation
 
-// 测试用，设置当前工作目录
-EFPath.base = "/Users/eyrefree/Documents/iOS/EFResume"
+func EFResume() {
+    // 打开模板文件
+    let templete = EFTemplete(path: EFPath.templete)
 
-let resume = EFTwig(path: EFPath.resume)
+    print(EFPath.resume)
 
+    // 打开生成的简历文件
+    let resume = EFFile(path: EFPath.resume)
+    resume.content = templete.apply()
+    resume.save()
+}
+
+EFResume()
