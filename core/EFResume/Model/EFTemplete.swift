@@ -111,6 +111,20 @@ class EFTemplete: EFFile {
 
     // MARK:- 社区经验
     var GitHubID = EFHolderText("GitHubID")
+    var community = EFHolderMap("community") { (dictionary) -> String in
+        var content = ""
+        for (index, element) in dictionary.enumerated() {
+            if let valueString = element.value as? String {
+                content += (
+                    "<tr>" +
+                        "<td>\(element.key)</td>" +
+                        "<td>\(valueString)</td>" +
+                    "</tr>"
+                )
+            }
+        }
+        return content
+    }
 
     // 应用设置
     func apply() -> String {

@@ -103,6 +103,13 @@ func input(templete: inout EFTemplete) {
 
     // 社区经验
     templete.GitHubID.set("EyreFree")
+    templete.community.set(
+        [
+            "iOS": "开发、维护和推广 GitHub 上的 iOS 开源库。",
+            "翻译": "作为 SwiftGG 翻译组成员，参与翻译组的日常翻译、校对工作；参与饿了么大前端 Node 面试题（ElemeFE/node-interview）中译英工作；提交英译中文档 PR 到 SwiftLint 等开源项目。",
+            "其它": "作为 T 沙龙上海组委会成员负责组织上海地区的 iOS 线下技术分享交流活动；管理饿了么物流 iOS 开发组 GitHub 组织并维护小组技术博客。"
+        ]
+    )
 }
 
 main()
