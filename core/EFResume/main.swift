@@ -50,7 +50,7 @@ func input(templete: inout EFTemplete) {
     )
 
     // 个人简介
-    templete.personalProfile.set(
+    templete.information.set(
         [
             "目前就职于饿了么，主要负责\("蜂鸟商家版".a(link: "https://itunes.apple.com/cn/app/feng-niao-shang-jia-ban/id1203543592?mt=8"))的开发及维护工作，同时也负责管理物流 iOS 开发组的 GitHub 组织和维护本组的技术博客。",
             "自 2015 年开始接触 iOS 开发，至今已有 2 年时间，熟练掌握 Swift、Objective-C 代码的编写。熟悉大部分 iOS 开发与调试工具，理解 iOS App 结构与运行机制，注重代码质量与执行效率。",
@@ -59,6 +59,15 @@ func input(templete: inout EFTemplete) {
             "熟悉 Git Flow 工作流程，有较好的 Git 使用习惯。有良好的代码风格与清晰的文档结构，遵循团队开发规范。",
             "当前主要学习 Swift 语言，能够开发一定程度的 Android 程序，也会写一些简单的前端页面和 MFC／Qt 桌面端应用。",
             "寻觅一份 iOS 开发的全职正式工作，也可以根据具体情况考虑其它相关岗位。".strong()
+        ]
+    )
+
+    // 技能专长
+    templete.specialities.set(
+        [
+            "Swift": 70,
+            "Objective-C": 45,
+            "C/C++": 30
         ]
     )
 }

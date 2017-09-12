@@ -44,11 +44,32 @@ class EFTemplete: EFFile {
     }
 
     // MARK:- 个人简介
-    var personalProfile = EFHolderArray("personalProfile") { (array) -> String in
+    var information = EFHolderArray("information") { (array) -> String in
         var content = ""
         for line in array {
             if let line = line as? String {
                 content += line.p()
+            }
+        }
+        return content
+    }
+
+    // MARK:- 技能专长
+    var specialities = EFHolderMap("specialities") { (dictionary) -> String in
+        var content = ""
+        for (index, element) in dictionary.enumerated() {
+            if let valueInt = element.value as? Int {
+                content += (
+                    "<div class=\"large-4 medium-4 small-6 columns\">" +
+                        "<ul data-pie-id=\"\(index + 1)\" class=\"pie_desc\">" +
+                        "<li data-value=\"\(valueInt)\">" +
+                        "<div class=\"skill_info\"><span class=\"skill_name\">\(element.key)</span><span class=\"skill_level\">\(valueInt)</span></div>" +
+                        "</li>" +
+                        "<li data-value=\"\(100 - valueInt)\"></li>" +
+                        "</ul>" +
+                        "<div id=\"\(index + 1)\" class=\"pie  animated bounceIn\"></div>" +
+                    "</div>"
+                )
             }
         }
         return content
