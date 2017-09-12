@@ -94,4 +94,9 @@ extension String {
     func p() -> String {
         return "<p>\(self)</p>"
     }
+
+    // 添加 Div
+    func div() -> String {
+        return "<div>\(self)</div>"
+    }
 }

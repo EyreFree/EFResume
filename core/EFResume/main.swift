@@ -17,7 +17,9 @@ func main() {
 
     // 打开生成的简历文件
     let resume = EFFile(path: EFPath.resume)
+    // 应用所填入的信息
     resume.content = templete.apply()
+    // 保存
     resume.save()
 }
 
@@ -68,6 +70,34 @@ func input(templete: inout EFTemplete) {
             "Swift": 70,
             "Objective-C": 45,
             "C/C++": 30
+        ]
+    )
+
+    // 技能评价
+    templete.skillsList.set(
+        [
+            "iOS": 5,
+            "Swift": 6,
+            "Objeective-C": 4,
+            "Kotlin/Android": 2,
+            "Shell": 1,
+            "HTML & CSS": 3,
+            "Javascript": 3,
+            "C/C++/Qt/VC": 4,
+            "Markdown": 7
+        ]
+    )
+    templete.skillsDescription.set(
+        [
+            "有良好的代码编写规范，",
+            "对应用工作机制较熟悉，",
+            "有良好的程序开发能力，",
+            "积攒了丰富的调试经验，",
+            "热衷于用代码解决问题，",
+            "熟练使用版本控制工具，",
+            "倾力于开源与技术分享，",
+            "能够阅读英文技术文档，",
+            "关注科技行业前沿技术。"
         ]
     )
 }

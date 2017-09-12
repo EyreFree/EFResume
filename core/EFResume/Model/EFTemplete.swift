@@ -75,6 +75,40 @@ class EFTemplete: EFFile {
         return content
     }
 
+    // MARK:- 技能评价
+    var skillsList = EFHolderMap("skillsList") { (dictionary) -> String in
+        var content = ""
+        for (index, element) in dictionary.enumerated() {
+            if let valueInt = element.value as? Int {
+                var roundHtml = ""
+                for li in 0 ..< 8 {
+                    roundHtml += valueInt > li ? "<li><span></span></li>" : "<li><span class=\"grey\"></span></li>"
+                }
+
+                content += (
+                    "<ul class=\"small-block-grid-2\">" +
+                        "<li class=\"name\">\(element.key)</li>" +
+                        "<li>" +
+                        "<ul class=\"small-block-grid-8 ellipses\">" +
+                        roundHtml +
+                        "</ul>" +
+                        "</li>" +
+                    "</ul>"
+                )
+            }
+        }
+        return content
+    }
+    var skillsDescription = EFHolderArray("skillsDescription") { (array) -> String in
+        var content = ""
+        for line in array {
+            if let line = line as? String {
+                content += "<div class=\"name\">\(line)</div>"
+            }
+        }
+        return content
+    }
+
     // 应用设置
     func apply() -> String {
         // 遍历所有属性
