@@ -10,6 +10,8 @@ import Foundation
 
 class EFHolderText: EFHolder {
 
+    var content: String = ""
+
     override func generate() -> String {
         return content
     }

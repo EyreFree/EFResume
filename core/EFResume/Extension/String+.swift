@@ -78,4 +78,9 @@ extension String {
     func clean() -> String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
+
+    // 添加超链接
+    func a(link: String) -> String {
+        return "<a href='\(link)'>\(self)</a>"
+    }
 }

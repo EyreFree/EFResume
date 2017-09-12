@@ -11,11 +11,9 @@ import Foundation
 class EFHolder {
 
     var holder: String
-    var content: String
-
+    
     init(_ text: String) {
         holder = "%\(text)%"
-        content = text
     }
 
     func apply(_ templete: inout String) {

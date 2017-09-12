@@ -27,7 +27,6 @@ class EFError {
     }
 
     func finish() {
-        print(content)
-        // exit(1)
+        fatalError(content)
     }
 }
