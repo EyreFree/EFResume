@@ -79,8 +79,19 @@ extension String {
         return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
     }
 
+    // MARK:- HTML
     // 添加超链接
     func a(link: String) -> String {
         return "<a href='\(link)'>\(self)</a>"
+    }
+
+    // 添加 Strong
+    func strong() -> String {
+        return "<strong>\(self)</strong>"
+    }
+
+    // 添加 P
+    func p() -> String {
+        return "<p>\(self)</p>"
     }
 }

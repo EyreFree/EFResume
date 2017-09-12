@@ -43,6 +43,18 @@ class EFTemplete: EFFile {
         return content
     }
 
+    // MARK:- 个人简介
+    var personalProfile = EFHolderArray("personalProfile") { (array) -> String in
+        var content = ""
+        for line in array {
+            if let line = line as? String {
+                content += line.p()
+            }
+        }
+        return content
+    }
+
+    // 应用设置
     func apply() -> String {
         // 遍历所有属性
         let properties = Mirror(reflecting: self).children
