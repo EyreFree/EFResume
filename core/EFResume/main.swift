@@ -100,6 +100,9 @@ func input(templete: inout EFTemplete) {
             "关注科技行业前沿技术。"
         ]
     )
+
+    // 社区经验
+    templete.GitHubID.set("EyreFree")
 }
 
 main()

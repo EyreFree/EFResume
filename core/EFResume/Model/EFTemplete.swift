@@ -109,6 +109,9 @@ class EFTemplete: EFFile {
         return content
     }
 
+    // MARK:- 社区经验
+    var GitHubID = EFHolderText("GitHubID")
+
     // 应用设置
     func apply() -> String {
         // 遍历所有属性
