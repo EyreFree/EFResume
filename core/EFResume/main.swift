@@ -8,11 +8,12 @@
 
 import Foundation
 
-func EFResume() {
+func main() {
     // 打开模板文件
-    let templete = EFTemplete(path: EFPath.templete)
+    var templete = EFTemplete(path: EFPath.templete)
 
-    print(EFPath.resume)
+    // 填入内容
+    input(templete: &templete)
 
     // 打开生成的简历文件
     let resume = EFFile(path: EFPath.resume)
@@ -20,4 +21,10 @@ func EFResume() {
     resume.save()
 }
 
-EFResume()
+func input(templete: inout EFTemplete) {
+    // 页面标题
+    templete.pageTitle.set("EyreFree 的简历")
+    templete.pageDescription.set("EyreFree, iOS, Swift")
+}
+
+main()

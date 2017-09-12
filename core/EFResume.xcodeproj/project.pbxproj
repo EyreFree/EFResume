@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124DF4061F6796E5000546E3 /* EFHolderText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DF4051F6796E5000546E3 /* EFHolderText.swift */; };
+		124DF4081F67996C000546E3 /* EFHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124DF4071F67996C000546E3 /* EFHolder.swift */; };
 		1297619C1F5FC8D10075C314 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1297619B1F5FC8D10075C314 /* main.swift */; };
 		129F35921F62DB670076F627 /* PROJECT_DIR in CopyFiles */ = {isa = PBXBuildFile; fileRef = 129F35911F62DB570076F627 /* PROJECT_DIR */; };
 		129F35941F62DEA70076F627 /* EFTemplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129F35931F62DEA70076F627 /* EFTemplete.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		1218703B1F624F3300B27057 /* templete.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = templete.html; sourceTree = "<group>"; };
+		124DF4051F6796E5000546E3 /* EFHolderText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFHolderText.swift; sourceTree = "<group>"; };
+		124DF4071F67996C000546E3 /* EFHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFHolder.swift; sourceTree = "<group>"; };
 		129761981F5FC8D10075C314 /* EFResume */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EFResume; sourceTree = BUILT_PRODUCTS_DIR; };
 		1297619B1F5FC8D10075C314 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		129F35911F62DB570076F627 /* PROJECT_DIR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PROJECT_DIR; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				12A82A461F602B840060230F /* EFPath.swift */,
 				12A82A3C1F600A270060230F /* EFFile.swift */,
 				129F35931F62DEA70076F627 /* EFTemplete.swift */,
+				124DF4071F67996C000546E3 /* EFHolder.swift */,
+				124DF4051F6796E5000546E3 /* EFHolderText.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 				1297619C1F5FC8D10075C314 /* main.swift in Sources */,
 				12A82A3D1F600A270060230F /* EFFile.swift in Sources */,
 				12A82A431F60254D0060230F /* String+.swift in Sources */,
+				124DF4061F6796E5000546E3 /* EFHolderText.swift in Sources */,
 				129F35941F62DEA70076F627 /* EFTemplete.swift in Sources */,
 				12A82A471F602B840060230F /* EFPath.swift in Sources */,
+				124DF4081F67996C000546E3 /* EFHolder.swift in Sources */,
 				12A82A451F6025520060230F /* Global.swift in Sources */,
 				12A82A401F600C760060230F /* EFError.swift in Sources */,
 			);
