@@ -177,6 +177,30 @@ class EFTemplete: EFFile {
         }
         return content
     }
+
+    // MARK:- 开源项目
+    var openSource = EFHolderArray("openSource") { (array) -> String in
+        var content = ""
+        for element in array {
+            if let valueDict = element as? Dictionary<String, String> {
+                content += (
+                    "<div class=\"large-12 small-12 columns animated fadeIn\">" +
+                        "<div class=\"row\">" +
+                        "<div class=\"large-3 medium-3 small-4 columns\">" +
+                        "<div class=\"category\">\(valueDict["name"] ?? "")</div><img src=\"https://eyrefree.github.io/EFResume/img/ribbon.svg\" width=\"100\" height=\"131\" alt=\"\(valueDict["title"] ?? "")\" class=\"ribbon\"></div>" +
+                        "<div class=\"large-9 medium-9 small-8 columns\">" +
+                        "<div class=\"recog_data\">" +
+                        "<div class=\"title\"><a href='\(valueDict["link"] ?? "")'>\(valueDict["title"] ?? "")</a></div>" +
+                        "<div class=\"desc\">\(valueDict["description"] ?? "")</div>" +
+                        "</div>" +
+                        "</div>" +
+                        "</div>" +
+                    "</div>"
+                )
+            }
+        }
+        return content
+    }
 }
 
 extension EFTemplete {
