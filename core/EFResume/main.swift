@@ -54,7 +54,7 @@ func input(templete: inout EFTemplete) {
     // 个人简介
     templete.information.set(
         [
-            "目前就职于饿了么，主要负责\("蜂鸟商家版".a(link: "https://itunes.apple.com/cn/app/feng-niao-shang-jia-ban/id1203543592?mt=8"))的开发及维护工作，同时也负责管理物流 iOS 开发组的 GitHub 组织和维护本组的技术博客。",
+            "目前就职于饿了么，主要负责\("蜂鸟商家版".a(link: "https://itunes.apple.com/cn/app/feng-niao-shang-jia-ban/id1203543592?mt=8"))的开发、维护及小组管理工作，同时也负责管理物流 iOS 开发组的 GitHub 组织和维护本组的技术博客。",
             "自 2015 年开始接触 iOS 开发，至今已有 2 年时间，熟练掌握 Swift、Objective-C 代码的编写。熟悉大部分 iOS 开发与调试工具，理解 iOS App 结构与运行机制，注重代码质量与执行效率。",
             "了解常见移动 App 架构，长期使用 Swift 与 Objective-C 进行混合开发，熟悉各类常用第三方库的使用。",
             "熟悉 iOS 库的开发与发布，了解怎样利用 CocoaPods／Swift Package Manager／Cathage 进行打包与集成，业余时间热爱编写开源代码。熟悉持续集成，能够编写 Jenkins、Travis CI 等持续集成工具的配置。",
@@ -105,9 +105,9 @@ func input(templete: inout EFTemplete) {
     templete.GitHubID.set("EyreFree")
     templete.community.set(
         [
-            "iOS": "开发、维护和推广 GitHub 上的 iOS 开源库。",
-            "翻译": "作为 SwiftGG 翻译组成员，参与翻译组的日常翻译、校对工作；参与饿了么大前端 Node 面试题（ElemeFE/node-interview）中译英工作；提交英译中文档 PR 到 SwiftLint 等开源项目。",
-            "其它": "作为 T 沙龙上海组委会成员负责组织上海地区的 iOS 线下技术分享交流活动；管理饿了么物流 iOS 开发组 GitHub 组织并维护小组技术博客。"
+            "iOS": "开发、维护和推广 \("GitHub".a(link: "https://github.com/EyreFree")) 上的 iOS 开源库。",
+            "翻译": "作为 \("SwiftGG".a(link: "http://swift.gg/")) 翻译组成员，参与翻译组的日常翻译、校对工作；参与饿了么大前端 Node 面试题（\("ElemeFE/node-interview".a(link: "https://github.com/ElemeFE/node-interview"))）中译英工作；提交英译中文档 PR 到 \("SwiftLint".a(link: "https://github.com/realm/SwiftLint")) 等开源项目。",
+            "其它": "作为 \("T 沙龙".a(link: "http://t.swift.gg/"))上海组委会成员负责组织上海地区的 iOS 线下技术分享交流活动；管理饿了么物流 iOS 开发组 GitHub 组织并维护小组技术博客。"
         ]
     )
 
@@ -119,10 +119,10 @@ func input(templete: inout EFTemplete) {
                 "了解移动开发原理；",
                 "热衷 iOS 应用开发。"
             ],
-            "5": [
-                "5 年软件开发经验；",
+            "3": [
+                "3 年软件开发经验；",
                 "长期进行各种开发；",
-                "熟悉各类开发工具安装和使用。"
+                "熟悉各类开发工具调试的使用。"
             ]
         ]
     )
