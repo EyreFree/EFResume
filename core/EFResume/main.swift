@@ -178,6 +178,16 @@ func input(templete: inout EFTemplete) {
             ]
         ]
     )
+
+    // 扩展技能
+    templete.interests.set(
+        [
+            "翻译": "fi-pencil",
+            "前端": "fi-html5",
+            "设计": "fi-paint-bucket",
+            "桌面": "fi-folder"
+        ]
+    )
 }
 
 main()

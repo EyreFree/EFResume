@@ -201,6 +201,23 @@ class EFTemplete: EFFile {
         }
         return content
     }
+
+    // MARK:- 扩展技能
+    var interests = EFHolderMap("interests") { (dictionary) -> String in
+        var content = ""
+        for element in dictionary {
+            if let valueString = element.value as? String {
+                content += (
+                    "<div class=\"large-3 small-6 medium-3 columns animated bounceIn\">" +
+                        "<div class=\"int_icon\"><i class=\"\(valueString)\"></i>" +
+                        "<div class=\"activity\">\(element.key)</div>" +
+                        "</div>" +
+                    "</div>"
+                )
+            }
+        }
+        return content
+    }
 }
 
 extension EFTemplete {
