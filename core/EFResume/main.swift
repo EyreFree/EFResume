@@ -93,7 +93,7 @@ func input(templete: inout EFTemplete) {
         [
             "iOS": 5,
             "Swift": 6,
-            "Objeective-C": 4,
+            "Objective-C": 4,
             "Kotlin/Android": 2,
             "Shell": 1,
             "HTML & CSS": 3,
