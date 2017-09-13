@@ -148,6 +148,35 @@ class EFTemplete: EFFile {
         }
         return content
     }
+
+    // MARK:- 项目经历
+    var project = EFHolderArray("project") { (array) -> String in
+        var content = ""
+        for element in array {
+            if let valueDict = element as? Dictionary<String, Any> {
+                var proDescsHtml = ""
+                if let proDescs = valueDict["pro_desc"] as? [String] {
+                    for proDesc in proDescs {
+                        proDescsHtml += "<li class=\"desc_line\">\(proDesc)</li>"
+                    }
+                }
+
+                content += (
+                    "<div class=\"pro_item\">" +
+                        "<div class=\"category\">\(valueDict["category"] as? String ?? "")</div>" +
+                        "<div class=\"pro_name\">\(valueDict["pro_name"] as? String ?? "")</div>" +
+                        "<div class=\"pro_desc\">" +
+                        "<ul>" +
+                        proDescsHtml +
+                        "</ul>" +
+                        "</div>" +
+                    "</div>"
+                )
+                
+            }
+        }
+        return content
+    }
 }
 
 extension EFTemplete {
