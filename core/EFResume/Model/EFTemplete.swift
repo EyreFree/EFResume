@@ -126,6 +126,32 @@ class EFTemplete: EFFile {
         return content
     }
 
+    // MARK:- 个人经验
+    var experience = EFHolderMap("experience") { (dictionary) -> String in
+        var content = ""
+        for (index, element) in dictionary.enumerated() {
+            if let valueArray = element.value as? [String] {
+                var valueHtml = ""
+                for value in valueArray {
+                    valueHtml += "<div class=\"date\">\(value)</div>"
+                }
+
+                content += (
+                    "<div class=\"large-6 medium-6 small-12 columns animated fadeIn\">" +
+                        "<div class=\"year\">\(element.key)</div>" +
+                        "<div class=\"exp_data\">" +
+                        valueHtml +
+                        "</div>" +
+                    "</div>"
+                )
+            }
+        }
+        return content
+    }
+}
+
+extension EFTemplete {
+
     // 应用设置
     func apply() -> String {
         // 遍历所有属性
