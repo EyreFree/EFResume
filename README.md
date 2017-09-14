@@ -8,7 +8,7 @@
 <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
 </p>
 
-EFResume is a normal resume templete, in Swift. It is inspired by [zresume](https://github.com/izuolan/zresume), because zresume is based on Docker, but I know nothing about this technology unfortunately, and it is really very very beautiful, so I make it to a static templete on my own, 😂. The design if come from [FREE Resume Template](https://www.behance.net/gallery/15677411/FREE-Resume-Template). Issue and PR are welcome, wish to improve this resume with you, please press `Star` button above if EFResume has brought you convenience, 🙏, you can contact me if there is any problem.
+EFResume is a normal resume templete, in Swift. It is inspired by [zresume](https://github.com/izuolan/zresume), because zresume is based on Docker, but I know nothing about this technology unfortunately, and it is really very very beautiful, so I make it to a static templete on my own, 😂. The design is come from [FREE Resume Template](https://www.behance.net/gallery/15677411/FREE-Resume-Template). Issue and PR are welcome, wish to improve this resume with you, please press `Star` button above if EFResume has brought you convenience, 🙏, you can contact me if there is any problem.
 
 > [中文介绍](https://github.com/EyreFree/EFResume/blob/master/README_CN.md)
 
