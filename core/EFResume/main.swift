@@ -39,6 +39,9 @@ func main() {
 }
 
 func input(templete: inout EFTemplete) {
+    // 资源路径
+    templete.basePath.set("https://resume.eyrefree.org")
+
     // 页面属性
     templete.pageTitle.set("普通的简历")
     templete.pageDescription.set("EyreFree 的个人简历")

@@ -25,6 +25,9 @@ import Foundation
 
 class EFTemplete: EFFile {
 
+    // MARK:- 资源路径
+    var basePath = EFHolderText("basePath")
+
     // MARK:- 页面属性
     var pageTitle = EFHolderText("pageTitle")
     var pageDescription = EFHolderText("pageDescription")
