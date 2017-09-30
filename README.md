@@ -23,8 +23,8 @@ EFResume is a normal resume templete, in Swift. It is inspired by [zresume](http
 
 ## Requirements
 
-- XCode 8.3+
-- Swift 3.0+
+- XCode 9.0+
+- Swift 4.0+
 
 ## Installation
 

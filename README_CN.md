@@ -23,8 +23,8 @@ EFResume 是一个普通的简历模板（可能还称不上），用 Swift 进�
 
 ## 环境
 
-- XCode 8.3+
-- Swift 3.0+
+- XCode 9.0+
+- Swift 4.0+
 
 ## 安装
 
