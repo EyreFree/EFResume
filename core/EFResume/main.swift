@@ -190,7 +190,7 @@ func input(templete: inout EFTemplete) {
         [
             [
                 "name": "二维码",
-                "title": "EFQRCode（1800+ Star）",
+                "title": "EFQRCode（2000+ Star）",
                 "description": "EFQRCode 是一个轻量级的、用来生成和识别二维码的纯 Swift 库，可根据输入的水印图和图标产生艺术二维码，基于 CoreImage 进行开发。EFQRCode 为你提供了一种更好的在你的 App 中操作二维码的方式。",
                 "link": "https://github.com/EyreFree/EFQRCode"
             ]
