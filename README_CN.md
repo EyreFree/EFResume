@@ -2,6 +2,7 @@
 
 <p align="center">
 <a href="https://travis-ci.org/EyreFree/EFResume"><img src="http://img.shields.io/travis/EyreFree/EFResume.svg"></a>
+<a href="https://codebeat.co/projects/github-com-eyrefree-efresume-master"><img alt="Codebeat" src="https://codebeat.co/badges/1f0df957-6f42-4169-aec0-22d506b421d4" /></a>
 <a href="https://github.com/apple/swift"><img src="https://img.shields.io/badge/language-swift-orange.svg"></a>
 <a href="https://raw.githubusercontent.com/EyreFree/EFResume/master/LICENSE"><img src="https://img.shields.io/badge/license-GPLv3-000000.svg"></a>
 <a href="https://twitter.com/EyreFree777"><img src="https://img.shields.io/badge/twitter-@EyreFree777-blue.svg?style=flat"></a>
