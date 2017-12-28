@@ -133,13 +133,13 @@ func input(templete: inout EFTemplete) {
     templete.experience.set(
         [
             "2": [
-                "2 年 iOS 开发经验；",
+                "2.5 年 iOS 开发经验；",
                 "了解移动开发原理；",
                 "热衷 iOS 应用开发。"
             ],
-            "3": [
-                "3 年软件开发经验；",
-                "长期进行各种开发；",
+            "1": [
+                "0.5 年 C++ 开发经验；",
+                "MFC/Qt/Win32各种；",
                 "熟悉各类开发工具调试的使用。"
             ]
         ]
@@ -190,7 +190,7 @@ func input(templete: inout EFTemplete) {
         [
             [
                 "name": "二维码",
-                "title": "EFQRCode（2000+ Star）",
+                "title": "EFQRCode（2300+ Star）",
                 "description": "EFQRCode 是一个轻量级的、用来生成和识别二维码的纯 Swift 库，可根据输入的水印图和图标产生艺术二维码，基于 CoreImage 进行开发。EFQRCode 为你提供了一种更好的在你的 App 中操作二维码的方式。",
                 "link": "https://github.com/EyreFree/EFQRCode"
             ]
