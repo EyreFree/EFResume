@@ -30,11 +30,6 @@ extension String {
         return self[self.index(self.startIndex, offsetBy: index)]
     }
 
-    // 字符数量
-    func count() -> Int {
-        return self.characters.count
-    }
-
     // 是否符合输入的正则表达式
     func conform(regex: String) -> Bool {
         return NSPredicate(format: "SELF MATCHES %@", regex).evaluate(with: self)
@@ -56,7 +51,8 @@ extension String {
     // 替换前缀
     func replacePrefix(string: String, with: String) -> String {
         if self.hasPrefix(string) {
-            return with + String(self.characters.dropFirst(string.count()))
+
+            return with + String(self.dropFirst(string.count))
         }
         return self
     }
@@ -64,7 +60,7 @@ extension String {
     // 替换尾缀
     func replaceSuffix(string: String, with: String) -> String {
         if self.hasSuffix(string) {
-            return String(self.characters.dropLast(string.count())) + with
+            return String(self.dropLast(string.count)) + with
         }
         return self
     }
