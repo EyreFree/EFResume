@@ -83,7 +83,7 @@ extension String {
     // 将多个连续重复字符变为一个
     func toOne() -> String {
         var outString = self
-        let length = self.characters.count
+        let length = self.count
         for index in (1 ..< length).reversed() {
             if outString[index] == outString[index - 1] {
                 outString.remove(at: outString.index(outString.startIndex, offsetBy: index))
