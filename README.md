@@ -24,8 +24,8 @@ EFResume is a normal resume templete, in Swift. It is inspired by [zresume](http
 
 ## Requirements
 
-- XCode 9.0+
-- Swift 4.0+
+- Xcode 10.2+
+- Swift 5.0+
 
 ## Installation
 
@@ -48,6 +48,8 @@ git clone git@github.com:EyreFree/EFResume.git; cd EFResume/core; open EFResume.
 5. Commit and push local change to remote;
 6. Go to GitHub and open `GitHub Pages` in setting, use `/docs` as the root path, then you can get your online resume and get the URL at the same time.
 7. Good luck & Enjoy it，👍
+
+PS: if you get a `dyld: Library not loaded: @rpath/libswiftCore.dylib` error, see [this](https://stackoverflow.com/questions/55357154/dyld-library-not-loaded-rpath-libswiftcore-dylib-problem-with-new-xcode-10-2).
 
 ## Author
 

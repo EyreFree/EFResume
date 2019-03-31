@@ -49,6 +49,8 @@ git clone git@github.com:EyreFree/EFResume.git; cd EFResume/core; open EFResume.
 6. 打开 GitHub 的 Pages 服务，选择 /docs 路径作为根路径，即可生成在线简历同时获得 URL 地址。
 7. 祝好运，👍
 
+备注：如果你遇到了 `dyld: Library not loaded: @rpath/libswiftCore.dylib` 错误，请参考 [这里](https://stackoverflow.com/questions/55357154/dyld-library-not-loaded-rpath-libswiftcore-dylib-problem-with-new-xcode-10-2)。
+
 ## 作者
 
 EyreFree, eyrefree@eyrefree.org
